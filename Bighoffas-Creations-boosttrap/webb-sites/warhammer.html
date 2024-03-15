@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--### head ###########################################################################(heed)#-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Bighoffas Creations</title>
+  </head>
+  <!--####################################################################################(/head)#-->
+  <!-- backgrunds bild -->
+  <body
+    class="bg-image"
+    style="
+      background-image: url('../images/1back-g-universe.jpg ');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <!--### wrapper #####################################################################(wrapper)#
+     wrappern har en svart bakgrunds färg bild (bg-black) och har ingen padding på sidorna och
+     centrerar sitt inne håll -->
+    <div class="container wrapper px-0 bg-black">
+      <!--### Header #####################################################################(header)#
+      centrerar sitt inne håll och ingen padding på sidorna-->
+      <header class="container px-0">
+        <!--### nav #########################################################################(nav)#
+        vissar sin fulla brädd i (lg) och  responsivt navigationsfält -->
+        <nav class="navbar navbar-expand-lg bg-primary-subtle">
+          <!--behållare med en flytande bredd-->
+          <div class="container-fluid">
+            <!--###### Logga ##############################################################(logga)#
+                sidans logga som är en länk till Home-->
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../images/site-logga-Head.jpg"
+                alt="Logo"
+                width="50"
+                height="50"
+                class="d-inline-block align-text-top rounded-circle"
+              />
+            </a>
+            <h3>Warhammer</h3>
+            <!--#########################################################################(/logga)#-->
+
+            <!--### hamburgar meny knapp ############################################(hamburgare)#
+            funtioner som aktiveras på små skärmar och blir en knapp som tar ner menyns 
+             id (navbarSupportedContent) -->
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--####################################################################(/hamburgare)#-->
+
+            <!--### meny ##################################################################(meny)#-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!--### lista ##############################################################(lista)#
+              automatisk marginal till höger (me-auto) och (ms-lg-auto) automatisk marginal 
+              till höger som gör att listan blir i mitten. medans (align-items-end) gör att 
+              itemsen kommer på höger sida i hamburgar menyn -->
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-auto align-items-end"
+              >
+                <li class="nav-item">
+                  <!-- (active) vissar att det är det aktiva sidan -->
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <!--### dropp meny ##################################################(dropp meny)# -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Hobbys</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="space-engineers.html"
+                        >SpaceEngeners</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item active" href="warhammer.html"
+                        >Warhammer 40k</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="rollspel.html"
+                        >Rollspels Karaktärer</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="game.html"
+                        >Hugg Ner Busken</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- ###############################################################(/dropp meny)# -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#Kontakter">Kontakter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Policy">policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Information">Information</a>
+                </li>
+              </ul>
+              <!--######################################################################(/lista)#-->
+
+              <!--### sök fält #######################################################(sök fält)#-->
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+              <!--####################################################################(/sök fält)#-->
+            </div>
+            <!--##########################################################################(/meny)#-->
+          </div>
+        </nav>
+        <!--###############################################################################(/nav)#-->
+      </header>
+      <!--##############################################################################(/header)# -->
+
+      <!--### hero img ####################################################################(hero)# 
+      ingen padding på sidorna men margin bot  -->
+      <div class="container px-0">
+        <div
+          class="bg-image d-flex mb-5 justify-content-center align-items-center"
+          style="
+            background-image: url('../images/warhammer/hero_img.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 25rem;
+          "
+        >
+          <h1 class="text-warning bg-black m-2">Warhammer 40k</h1>
+        </div>
+      </div>
+      <!--################################################################################(/hero)# -->
+
+      <!--# film #########################################################################(/film)# -->
+      <div class="container px-2 px-lg-4 mb-5">
+        <video controls class="border rounded border-danger w-100">
+          <source
+            src="../movie/path-patrol-warhammer40k-tau-film.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!--################################################################################(/film)# -->
+
+      <!--### Main ########################################################################(main)# -->
+      <main class="container mb-5">
+        <div class="row">
+          <!--höger sida av main-->
+          <div class="col-md-4 col-lg-3 col-xl-2">
+            <div class="position-sticky" style="top: 2rem">
+              <!--### bild nav ############################################################(bild nav)# 
+              den följer med längs sidan när man scrollar ner. och den är upp delad i två block
+              ena vissas bara vi små skärmar. -->
+              <div class="justify-content-center custom-width text-center px-4">
+                <div class="col container text-warning bg-black mb-4">
+                  <h4>bighoffas Creations</h4>
+                </div>
+                <nav class="row justify-content-center text-center d-md-none">
+                  <!-- Home -->
+                  <div class="col-5 col-sm-3 scale-hover mb-4">
+                    <a href="../index.html" style="text-decoration: none">
+                      <div class="box">
+                        <img
+                          src="../images/home.jpg"
+                          alt="Space Engineers"
+                          class="img-fluid rounded-circle border border-primary-subtle"
+                        />
+                        <span style="color: white; font-size: 16px">Home</span>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Space Engineers -->
+                  <div class="col-5 col-sm-3 scale-hover">
+                    <a
+                      href="space-engineers.html"
+                      style="text-decoration: none"
+                      class=""
+                    >
+                      <div class="box">
+                        <img
+                          src="../images/spaceegeners/nav-SE-creations-PHM.jpg"
+                          alt="Space Engineers"
+                          class="img-fluid rounded-circle border border-primary-subtle"
+                        />
+                        <span style="color: white; font-size: 16px"
+                          >Space Engineers</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Hugg Ner Busken -->
+                  <div class="col-5 col-sm-3 scale-hover">
+                    <a href="game.html" style="text-decoration: none">
+                      <div class="box">
+                        <img
+                          src="../images/spel/buske.png"
+                          alt="Space Engineers"
+                          class="img-fluid rounded-circle border border-primary-subtle"
+                        />
+                        <span style="color: white; font-size: 16px"
+                          >Hugg Ner Busken</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <!-- rollspel -->
+                  <div class="col-5 col-sm-3 scale-hover">
+                    <a href="rollspel.html" style="text-decoration: none">
+                      <div class="box">
+                        <img
+                          src="../images/rollspels-bilder/nav-hydra.jpg"
+                          alt="Space Engineers"
+                          class="img-fluid rounded-circle border border-primary-subtle"
+                        />
+                        <span style="color: white; font-size: 16px"
+                          >rollspel</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                </nav>
+                <!-- samma bild nav som åvan men vissas som en vanlig bild nav över allt utan att följa med. (liten skärm) -->
+                <nav
+                  class="d-none d-md-block justify-content-center align-items-center text-center border mb-5 p-4"
+                >
+                  <div class="d-flex flex-column">
+                    <!-- home -->
+                    <div class="scale-hover">
+                      <a href="../index.html" style="text-decoration: none">
+                        <div class="">
+                          <img
+                            src="../images/home.jpg"
+                            alt="Space Engineers"
+                            class="img-fluid rounded-circle border border-primary-subtle"
+                          />
+                          <span style="color: white; font-size: 16px" class=""
+                            >Home</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+                    <!-- Space Engineers -->
+                    <div class="scale-hover">
+                      <a
+                        href="space-engineers.html"
+                        style="text-decoration: none"
+                        class=""
+                      >
+                        <div class="box">
+                          <img
+                            src="../images/spaceegeners/nav-SE-creations-PHM.jpg"
+                            alt="Space Engineers"
+                            class="img-fluid rounded-circle border border-primary-subtle"
+                          />
+                          <span style="color: white; font-size: 16px"
+                            >Space Engineers</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+                    <!-- Hugg Ner Busken -->
+                    <div class="scale-hover">
+                      <a href="game.html" style="text-decoration: none">
+                        <div class="box">
+                          <img
+                            src="../images/spel/buske.png"
+                            alt="Space Engineers"
+                            class="img-fluid rounded-circle border border-primary-subtle"
+                          />
+                          <span style="color: white; font-size: 16px"
+                            >Hugg Ner Busken</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+
+                    <!-- rollspel -->
+
+                    <div class="scale-hover">
+                      <a href="rollspel.html" style="text-decoration: none">
+                        <div class="box">
+                          <img
+                            src="../images/rollspels-bilder/nav-hydra.jpg"
+                            alt="Space Engineers"
+                            class="img-fluid rounded-circle border border-primary-subtle"
+                          />
+                          <span style="color: white; font-size: 16px"
+                            >rollspel</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+
+                <!--### bild nav ############################################################(/bild nav)# -->
+              </div>
+              <!--########################################################################(/bild nav)# -->
+            </div>
+          </div>
+          <!--vänster sida (huvid innehållet)-->
+          <div class="col-md-8 col-lg-9 col-xl-10 px-4">
+            <!--### presentation ######################################################(presentation)# -->
+            <div
+              class="container py-5 px-4 mb-5 text-warning bg-dark border border-primary-subtle"
+            >
+              <img
+                src="../images/warhammer/wariors.jpg"
+                class="rounded mb-4 d-block mx-auto float-sm-end m-1 border border-primary-subtle"
+                style="max-width: 175px"
+                alt="En presenerande bild av en man"
+              />
+
+              <h2 class="">Warhammer 40k logg</h2>
+
+              <p class="m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate quaerat animi facere quasi? Explicabo earum odio,
+                eveniet voluptates quibusdam quam asperiores veniam at deleniti
+                aut unde nulla error minima impedit iusto amet? Necessitatibus
+                explicabo error nulla omnis beatae voluptates repellendus,
+                tempora, iste quidem vero tenetur. Eos ad dignissimos, quae
+                cumque, quam asperiores veniam at deleniti aut unde expedita,
+                placeat repellendus deleniti tempore delectus provident corporis
+                accusamus ullam.
+              </p>
+            </div>
+            <!--######################################################################(/presentation)#-->
+            <!--### cards ####################################################################(cards)#
+            har har jag gjor att föreldern bestämmer barnens placering med ett mellan rum genom gap  -->
+            <div class="container p-0">
+              <div class="gap-3 mb-5">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <!-- kort 1 -->
+                  <div class="col">
+                    <div class="card bg-primary-subtle scale-hover">
+                      <img
+                        src="../images/warhammer/biggye.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">storm-kv-56</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aperiam et, reiciendis corporis nemo voluptate
+                          impedit!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- kort 2 -->
+                  <div class="col">
+                    <div class="card bg-primary-subtle scale-hover">
+                      <img
+                        src="../images/warhammer/bil.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">pirana xy15</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Iusto deleniti eius soluta alias!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- kort 3 -->
+                  <div class="col">
+                    <div class="card bg-primary-subtle scale-hover">
+                      <img
+                        src="../images/warhammer/Capture.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">cranox</h4>
+                        <p class="card-text">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Dolore minima incidunt nobis consectetur
+                          sapiente enim quas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- kort 4 -->
+                  <div class="col">
+                    <div class="card bg-primary-subtle scale-hover">
+                      <img
+                        src="../images/warhammer/hund.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">kroot hound</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Dolorum iure ab esse cum. Quae sapiente
+                          praesentium suscipit!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- kort 5 -->
+                  <div class="col">
+                    <div class="card bg-primary-subtle scale-hover">
+                      <img
+                        src="../images/warhammer/wariors.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">strike team</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Dolor iste autem unde sit fugiat pariatur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- kort 6 -->
+                  <div class="col">
+                    <div class="card bg-primary-subtle scale-hover">
+                      <img
+                        src="../images/warhammer/hund2.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">kroot hound</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Id cumque cum tempora eveniet ad.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- kort 7 -->
+                  <div class="col">
+                    <div class="card bg-primary-subtle scale-hover">
+                      <img
+                        src="../images/warhammer/monster.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Itaque magni hic dignissimos!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- kort 8 -->
+                  <div class="col">
+                    <div class="card bg-primary-subtle scale-hover">
+                      <img
+                        src="../images/warhammer/ledare.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">shapper</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Fugiat consequuntur doloribus voluptate tempore
+                          iure ipsum?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- nytt kort här -->
+                </div>
+              </div>
+            </div>
+            <!--#############################################################################(/cards)# -->
+            <!--### information ########################################################(information)#
+              har ett id för nav-->
+            <div
+              class="col-12 col-lg py-5 px-4 text-warning bg-dark border border-primary-subtle mb-5 mb-lg-0"
+              id="Information"
+            >
+              <h2>Information</h2>
+              <p class="m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate quaerat animi facere quasi? Explicabo earum odio,
+                eveniet voluptates quibusdam quam asperiores veniam at deleniti
+                aut unde nulla error minima impedit iusto amet? Necessitatibus
+                explicabo error nulla omnis beatae voluptates repellendus,
+                tempora, iste quidem vero tenetur. Eos ad dignissimos, quae
+                cumque, expedita, placeat repellendus deleniti tempore delectus
+                provident corporis accusamus ullam.
+              </p>
+            </div>
+            <!--#######################################################################(/information)#-->
+
+            <!--### Prenumerera ########################################################(Prenumerera)#-->
+            <div
+              class="container py-5 px-4 mt-5 text-black bg-warning border-primary-subtle"
+            >
+              <h2>Prenumerera</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate quaerat animi facere quasi? Explicabo earum odio,
+                eveniet voluptates quibusdam quam asperiores veniam at deleniti
+                aut unde nulla error minima impedit iusto amet?
+              </p>
+              <form action="#">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="input-group mb-3">
+                      <span id="basic-addon2"></span>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Skriv din e-post här"
+                        aria-label="Skriv din e-post här"
+                        aria-describedby="basic-addon2"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 pb-3">
+                    <button class="btn btn-primary" type="submit">
+                      Prenumerera
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--#######################################################################(/Prenumerera)#-->
+          </div>
+        </div>
+      </main>
+      <!--################################################################################(/main)#-->
+
+      <!--### footer ####################################################################(footer)#-->
+      <footer
+        class="container bg-dark py-5 px-4 text-warning bg-dark border border-primary-subtle px-0"
+      >
+        <div class="row justify-content-center gap-3">
+          <!--### Policy ################################################################(Policy)#
+          id för nav-->
+          <div class="col">
+            <div style="min-width: 12rem" id="Policy">
+              <h2>Policy</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Recusandae vitae ullam maxime numquam maiores dicta cumque
+                dolore iusto, obcaecati nobis facilis aliquid harum, suscipit
+                dolor similique quia, hic eum mollitia? Lorem ipsum dolor sit
+                amet consectetur
+              </p>
+              <p>I rymden kan ingen höra dig skrika!</p>
+            </div>
+          </div>
+          <!--##########################################################################(/Policy)#-->
+          <!--### Navigation ########################################################(Navigation)#-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <h2>Navigation</h2>
+              <nav class="navbar">
+                <ul class="">
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="../index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="game.html">Spel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="warhammer.html"
+                      >Warhammer 40k</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="space-engineers.html"
+                      >Space Engineers</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="rollspel.html"
+                      >Rollspel</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Kontakter"
+                      >Kontakter</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Policy">Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Information"
+                      >Information</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!--######################################################################(/Navigation)#-->
+          <!--### Kontakter ##########################################################(Kontakter)#
+          id för nav-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <section class="footer-kontakter" id="Kontakter">
+                <h2>Kontakter</h2>
+                <ul class="footer-kontakter__list">
+                  <li class="item">Mikael Hoffsteny</li>
+                  <li class="item">köpmansgatan 5</li>
+                  <li class="item">59838 Vimmerby</li>
+                  <li class="item">0492-40344</li>
+                  <li class="item">bighoffa@live.se</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <!--#######################################################################(/Kontakter)#-->
+          <!--### Socialamedier ##################################################(Socialamedier)#-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <h2>Socialamedier</h2>
+
+              <nav>
+                <a
+                  href="https://www.youtube.com/channel/UCfwp17ouENYR7czk4fYHs6A"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class=""
+                    src="../images/youtube-icon-tb.png"
+                    loading="lazy"
+                    alt="youtube ikonen är en kvadratisk röd kub med en vit trijangel i mitten"
+                /></a>
+
+                <a
+                  href="https://www.facebook.com/mikael.hoffsten"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class="footer-social__link-imges"
+                    src="../images/facebook-icon-tb.png"
+                    loading="lazy"
+                    alt="facebook ikon som är en blå rund cirkel runt en ett blåt F i mitten"
+                /></a>
+
+                <a
+                  href="https://www.instagram.com/bighoffa89/"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class=""
+                    src="../images/insta-icon-tb.png"
+                    loading="lazy"
+                    alt="instagram ikonen är en kvadratisk kamra som är rängbågs färgad "
+                /></a>
+              </nav>
+            </div>
+          </div>
+          <!--###################################################################(/Socialamedier)#-->
+        </div>
+      </footer>
+      <!--##############################################################################(/footer)# -->
+    </div>
+    <!--###############################################################################(/wrapper)# -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

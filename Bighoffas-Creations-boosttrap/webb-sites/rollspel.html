@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--### head ###########################################################################(heed)#-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Bighoffas Creations</title>
+  </head>
+  <!--####################################################################################(/head)#-->
+  <!-- backgrunds bild -->
+  <body
+    class="bg-image"
+    style="
+      background-image: url('../images/1back-g-universe.jpg ');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <!--### wrapper #####################################################################(wrapper)#
+     wrappern har en svart bakgrunds färg bild (bg-black) och har ingen padding på sidorna och
+     centrerar sitt inne håll -->
+    <div class="container wrapper px-0 bg-black">
+      <!--### Header #####################################################################(header)#
+      centrerar sitt inne håll och ingen padding på sidorna-->
+      <header class="container px-0">
+        <!--### nav #########################################################################(nav)#
+        vissar sin fulla brädd i (lg) och  responsivt navigationsfält -->
+        <nav class="navbar navbar-expand-lg bg-primary-subtle">
+          <!--behållare med en flytande bredd-->
+          <div class="container-fluid">
+            <!--###### Logga ##############################################################(logga)#
+                sidans logga som är en länk till Home-->
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../images/site-logga-Head.jpg"
+                alt="Logo"
+                width="50"
+                height="50"
+                class="d-inline-block align-text-top rounded-circle"
+              />
+            </a>
+            <h3>rollspel</h3>
+            <!--#########################################################################(/logga)#-->
+
+            <!--### hamburgar meny knapp ############################################(hamburgare)#
+            funtioner som aktiveras på små skärmar och blir en knapp som tar ner menyns 
+             id (navbarSupportedContent) -->
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--####################################################################(/hamburgare)#-->
+
+            <!--### meny ##################################################################(meny)#-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!--### lista ##############################################################(lista)#
+              automatisk marginal till höger (me-auto) och (ms-lg-auto) automatisk marginal 
+              till höger som gör att listan blir i mitten. medans (align-items-end) gör att 
+              itemsen kommer på höger sida i hamburgar menyn -->
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-auto align-items-end"
+              >
+                <li class="nav-item">
+                  <!-- (active) vissar att det är det aktiva sidan -->
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <!--### dropp meny ##################################################(dropp meny)# -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Hobbys</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="space-engineers.html"
+                        >SpaceEngeners</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="warhammer.html"
+                        >Warhammer 40k</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item active" href="rollspel.html"
+                        >Rollspels Karaktärer</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="game.html"
+                        >Hugg Ner Busken</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- ###############################################################(/dropp meny)# -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#Kontakter">Kontakter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Policy">policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Information">Information</a>
+                </li>
+              </ul>
+              <!--######################################################################(/lista)#-->
+
+              <!--### sök fält #######################################################(sök fält)#-->
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+              <!--####################################################################(/sök fält)#-->
+            </div>
+            <!--##########################################################################(/meny)#-->
+          </div>
+        </nav>
+        <!--###############################################################################(/nav)#-->
+      </header>
+      <!--##############################################################################(/header)# -->
+
+      <!--### hero img ####################################################################(hero)# 
+        -->
+      <div class="container px-0">
+        <div
+          class="bg-image d-flex justify-content-center align-items-center mb-5"
+        >
+          <img
+            src="../images/rollspels-bilder/hero.img/hero-img-hydra.jpg"
+            class="d-block w-100 img-fluid"
+            alt="..."
+          />
+        </div>
+      </div>
+      <!--################################################################################(/hero)# -->
+      <!--### titel bild nav ##########################################################(bild nav)# -->
+
+      <!--titel-->
+      <div class="container text-center text-warning bg-black mb-4">
+        <h1>bighoffas Creations</h1>
+      </div>
+      <div class="container text-center mb-4">
+        <!--nav-->
+        <!-- home -->
+        <div class="row justify-content-center custom-width">
+          <div class="col-10 col-md-8">
+            <nav class="row justify-content-center">
+              <div class="col-5 col-sm-3 col-md-3 scale-hover">
+                <a href="../index.html" style="text-decoration: none">
+                  <div class="box">
+                    <img
+                      src="../images/home.jpg"
+                      alt="Space Engineers"
+                      class="img-fluid rounded-circle border border-primary-subtle"
+                    />
+                    <span style="color: white; font-size: 16px">Home</span>
+                  </div>
+                </a>
+              </div>
+              <!-- Space Engineers -->
+              <div class="col-5 col-sm-3 col-md-3 scale-hover mb-4">
+                <a
+                  href="space-engineers.html"
+                  style="text-decoration: none"
+                  class=""
+                >
+                  <div class="box">
+                    <img
+                      src="../images/spaceegeners/nav-SE-creations-PHM.jpg"
+                      alt="Space Engineers"
+                      class="img-fluid rounded-circle border border-primary-subtle"
+                    />
+                    <span style="color: white; font-size: 16px"
+                      >Space Engineers</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <!-- Hugg Ner Busken -->
+              <div class="col-5 col-sm-3 col-md-3 scale-hover">
+                <a href="game.html" style="text-decoration: none">
+                  <div class="box">
+                    <img
+                      src="../images/spel/buske.png"
+                      alt="Space Engineers"
+                      class="img-fluid rounded-circle border border-primary-subtle"
+                    />
+                    <span style="color: white; font-size: 16px"
+                      >Hugg Ner Busken</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <!-- War Hammer -->
+              <div class="col-5 col-sm-3 col-md-3 scale-hover">
+                <a href="warhammer.html" style="text-decoration: none">
+                  <div class="box">
+                    <img
+                      src="../images/warhammer/nav-wariors.jpg"
+                      alt="Space Engineers"
+                      class="img-fluid rounded-circle border border-primary-subtle"
+                    />
+                    <span style="color: white; font-size: 16px"
+                      >War Hammer</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!--############################################################################(/bild nav)# -->
+
+      <!--### Main ########################################################################(main)# -->
+      <main class="container d-flex flex-column align-items-center px-4">
+        <!--### teckningar ##########################################################(teckningar)# -->
+
+        <!--### presentation ######################################################(presentation)# -->
+        <div
+          class="container py-5 px-4 mb-5 text-warning bg-dark border border-primary-subtle"
+        >
+          <img
+            src="../images/rollspels-bilder/blomma.jpg"
+            class="rounded mb-4 d-block mx-auto float-sm-end m-1 border border-primary-subtle"
+            height="200"
+            alt="En presenerande bild av en man"
+          />
+
+          <h2 class="">Rollspels tekekningar</h2>
+
+          <p class="m-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            quaerat animi facere quasi? Explicabo earum odio, eveniet voluptates
+            quibusdam quam asperiores veniam at deleniti aut unde nulla error
+            minima impedit iusto amet? Necessitatibus explicabo error nulla
+            omnis beatae voluptates repellendus, tempora, iste quidem vero
+            tenetur. Eos ad dignissimos, quae cumque, quam asperiores veniam at
+            deleniti aut unde expedita, placeat repellendus deleniti tempore
+            delectus provident corporis accusamus ullam.
+          </p>
+        </div>
+        <!--######################################################################(/presentation)#-->
+
+        <!--### carousel ##############################################################(carousel)#-->
+
+        <h3 class="text-warning mb-5">galleri Bilder</h3>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide mb-5 col-12 col-md-11 col-lg-8 col-xl-7 col-xxl-6 border border-primary-subtle"
+        >
+          <!--### slid knappar ################################################(carousel knappar)#
+          här är bildernas knappar i karuselen och börjar alltid på första bilden som är active
+          samt försvinner vid xs storlek-->
+          <div class="carousel-indicators d-none d-sm-flex">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="8"
+              aria-label="Slide 9"
+            ></button>
+          </div>
+          <!--################################################################(/carousel knappar)#-->
+          <!--# carousel bilder ################################################(carousel bilder)#
+          alla bilder samt första bilden är det aktiva vid start-->
+
+          <div class="carousel-inner hero-img">
+            <!--bild 1-->
+            <div class="carousel-item active hero-img">
+              <img
+                src="../images/rollspels-bilder/kvinnaIhuva.jpg"
+                class="d-block img-fluid vh-90"
+                alt="en ung kvinna i huva"
+              />
+            </div>
+            <!--bild 2-->
+            <div class="carousel-item hero-img">
+              <img
+                src="../images/rollspels-bilder/riddare.jpg"
+                class="d-block img-fluid vh-90"
+                alt="en riddare i rusning och lans"
+              />
+            </div>
+            <!--bild 3-->
+            <div class="carousel-item">
+              <img
+                src="../images/rollspels-bilder/tjuv.jpg"
+                class="d-block img-fluid vh-90"
+                alt="en smygande tjuv med långt hår och en sid väska"
+              />
+            </div>
+            <!--bild 4-->
+            <div class="carousel-item">
+              <img
+                src="../images/rollspels-bilder/kvinlig-riddare.jpg"
+                class="d-block img-fluid vh-90"
+                alt="en kvinlig riddare som håller ett svärd"
+              />
+            </div>
+            <!--bild 5-->
+            <div class="carousel-item">
+              <img
+                src="../images/rollspels-bilder/hydra.jpg"
+                class="d-block img-fluid vh-90"
+                alt="en hydra med fem huvden"
+              />
+            </div>
+            <!--bild 6-->
+            <div class="carousel-item">
+              <img
+                src="../images/rollspels-bilder/druid.jpg"
+                class="d-block img-fluid vh-90"
+                alt="en druid som är bland djur, en katt och en björn"
+              />
+            </div>
+            <!--bild 7-->
+            <div class="carousel-item">
+              <img
+                src="../images/rollspels-bilder/drake.jpg"
+                class="d-block img-fluid vh-90"
+                alt="en japansk liknade drake med long smal kropp med två armar "
+              />
+            </div>
+            <!--bild 8-->
+            <div class="carousel-item">
+              <img
+                src="../images/rollspels-bilder/tempel-riddare.jpg"
+                class="d-block img-fluid vh-90"
+                alt="En tempel riddare med två svärd i händerna."
+              />
+            </div>
+            <!--bild -->
+            <div class="carousel-item">
+              <img
+                src="../images/rollspels-bilder/mörker-alv.jpg"
+                class="d-block img-fluid vh-90"
+                alt="En tempel riddare med två svärd i händerna."
+              />
+            </div>
+            <!--ny bild här!-->
+          </div>
+          <!--###############################################################(/carousel bilder)#-->
+          <!--# carousel pil knapp ########################################(carousel pil-knapp)#
+          själva pil knapparna på sidorna-->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <!---->
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <!--##############################################################(/carousel pil-knapp)#-->
+        </div>
+        <!--##########################################################################(/carousel)#-->
+        <div class="container mb-5">
+          <div class="row gap-lg-5">
+            <!--### information ########################################################(information)#
+              har ett id för nav-->
+            <div
+              class="col-12 col-lg py-5 px-4 text-warning bg-dark border border-primary-subtle mb-5 mb-lg-0"
+              id="Information"
+            >
+              <h2>Information</h2>
+              <p class="m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate quaerat animi facere quasi? Explicabo earum odio,
+                eveniet voluptates quibusdam quam asperiores veniam at deleniti
+                aut unde nulla error minima impedit iusto amet? Necessitatibus
+                explicabo error nulla omnis beatae voluptates repellendus,
+                tempora, iste quidem vero tenetur. Eos ad dignissimos, quae
+                cumque, expedita, placeat repellendus deleniti tempore delectus
+                provident corporis accusamus ullam.
+              </p>
+            </div>
+            <!--#######################################################################(/information)#-->
+
+            <div
+              class="col-12 col-lg-8 py-5 px-4 mt-xs-5 text-center bg-primary-subtle"
+            >
+              <h3>Request</h3>
+              <form action="process_request.php" method="POST">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Namn</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Skriv din namn här"
+                    aria-label="Skriv din namn här"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-postadress</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Skriv din e-post här"
+                    aria-label="Skriv din e-post här"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="request" class="form-label"
+                    >Beskrivning av önskemål</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="request"
+                    name="request"
+                    rows="2"
+                    required
+                    placeholder="Skriv din förfrågan här"
+                    aria-label="Skriv din förfrågan här"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Skicka förfrågan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!--### Prenumerera ########################################################(Prenumerera)#-->
+        <div
+          class="container py-5 px-4 mb-5 text-black bg-warning border-primary-subtle"
+        >
+          <h2>Prenumerera</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            quaerat animi facere quasi? Explicabo earum odio, eveniet voluptates
+            quibusdam quam asperiores veniam at deleniti aut unde nulla error
+            minima impedit iusto amet?
+          </p>
+          <form action="#">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="input-group mb-3">
+                  <span id="basic-addon2"></span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Skriv din e-post här"
+                    aria-label="Skriv din e-post här"
+                    aria-describedby="basic-addon2"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 pb-3">
+                <button class="btn btn-primary" type="submit">
+                  Prenumerera
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--#######################################################################(/Prenumerera)#-->
+      </main>
+      <!--################################################################################(/main)#-->
+
+      <!--### footer ####################################################################(footer)#-->
+      <footer
+        class="container bg-dark py-5 px-4 text-warning bg-dark border border-primary-subtle px-0"
+      >
+        <div class="row justify-content-center gap-3">
+          <!--### Policy ################################################################(Policy)#
+          id för nav-->
+          <div class="col">
+            <div style="min-width: 12rem" id="Policy">
+              <h2>Policy</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Recusandae vitae ullam maxime numquam maiores dicta cumque
+                dolore iusto, obcaecati nobis facilis aliquid harum, suscipit
+                dolor similique quia, hic eum mollitia? Lorem ipsum dolor sit
+                amet consectetur
+              </p>
+              <p>I rymden kan ingen höra dig skrika!</p>
+            </div>
+          </div>
+          <!--##########################################################################(/Policy)#-->
+          <!--### Navigation ########################################################(Navigation)#-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <h2>Navigation</h2>
+              <nav class="navbar">
+                <ul class="">
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="../index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="game.html">Spel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="warhammer.html"
+                      >Warhammer 40k</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="space-engineers.html"
+                      >Space Engineers</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="rollspel.html"
+                      >Rollspel</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Kontakter"
+                      >Kontakter</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Policy">Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Information"
+                      >Information</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!--######################################################################(/Navigation)#-->
+          <!--### Kontakter #############################################""###########(Kontakter)#
+          id för nav-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <section class="footer-kontakter" id="Kontakter">
+                <h2>Kontakter</h2>
+                <ul class="footer-kontakter__list">
+                  <li class="item">Mikael Hoffsteny</li>
+                  <li class="item">köpmansgatan 5</li>
+                  <li class="item">59838 Vimmerby</li>
+                  <li class="item">0492-40344</li>
+                  <li class="item">bighoffa@live.se</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <!--#######################################################################(/Kontakter)#-->
+          <!--### Socialamedier ##################################################(Socialamedier)#-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <h2>Socialamedier</h2>
+
+              <nav>
+                <a
+                  href="https://www.youtube.com/channel/UCfwp17ouENYR7czk4fYHs6A"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class=""
+                    src="../images/youtube-icon-tb.png"
+                    loading="lazy"
+                    alt="youtube ikonen är en kvadratisk röd kub med en vit trijangel i mitten"
+                /></a>
+
+                <a
+                  href="https://www.facebook.com/mikael.hoffsten"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class="footer-social__link-imges"
+                    src="../images/facebook-icon-tb.png"
+                    loading="lazy"
+                    alt="facebook ikon som är en blå rund cirkel runt en ett blåt F i mitten"
+                /></a>
+
+                <a
+                  href="https://www.instagram.com/bighoffa89/"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class=""
+                    src="../images/insta-icon-tb.png"
+                    loading="lazy"
+                    alt="instagram ikonen är en kvadratisk kamra som är rängbågs färgad "
+                /></a>
+              </nav>
+            </div>
+          </div>
+          <!--###################################################################(/Socialamedier)#-->
+        </div>
+      </footer>
+      <!--##############################################################################(/footer)# -->
+    </div>
+    <!--###############################################################################(/wrapper)# -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

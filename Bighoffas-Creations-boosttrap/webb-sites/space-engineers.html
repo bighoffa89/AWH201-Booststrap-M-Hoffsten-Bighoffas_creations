@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--### head ###########################################################################(heed)#-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Bighoffas Creations</title>
+  </head>
+  <!--####################################################################################(/head)#-->
+  <!-- backgrunds bild -->
+  <body
+    class="bg-image"
+    style="
+      background-image: url('../images/1back-g-universe.jpg ');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <!--### wrapper #####################################################################(wrapper)#
+     wrappern har en svart bakgrunds färg bild (bg-black) och har ingen padding på sidorna och
+     centrerar sitt inne håll -->
+    <div class="container wrapper px-0 bg-black">
+      <!--### Header #####################################################################(header)#
+      centrerar sitt inne håll och ingen padding på sidorna-->
+      <header class="container px-0">
+        <!--### nav #########################################################################(nav)#
+        vissar sin fulla brädd i (lg) och  responsivt navigationsfält -->
+        <nav class="navbar navbar-expand-lg bg-primary-subtle">
+          <!--behållare med en flytande bredd-->
+          <div class="container-fluid">
+            <!--###### Logga ##############################################################(logga)#
+                sidans logga som är en länk till Home-->
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../images/site-logga-Head.jpg"
+                alt="Logo"
+                width="50"
+                height="50"
+                class="d-inline-block align-text-top rounded-circle"
+              />
+            </a>
+            <h3>Space Engeners</h3>
+            <!--#########################################################################(/logga)#-->
+
+            <!--### hamburgar meny knapp ############################################(hamburgare)#
+            funtioner som aktiveras på små skärmar och blir en knapp som tar ner menyns 
+             id (navbarSupportedContent) -->
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--####################################################################(/hamburgare)#-->
+
+            <!--### meny ##################################################################(meny)#-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!--### lista ##############################################################(lista)#
+              automatisk marginal till höger (me-auto) och (ms-lg-auto) automatisk marginal 
+              till höger som gör att listan blir i mitten. medans (align-items-end) gör att 
+              itemsen kommer på höger sida i hamburgar menyn -->
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-auto align-items-end"
+              >
+                <li class="nav-item">
+                  <!-- (active) vissar att det är det aktiva sidan -->
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <!--### dropp meny ##################################################(dropp meny)# -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Hobbys</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item active"
+                        href="space-engineers.html"
+                        >SpaceEngeners</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="warhammer.html"
+                        >Warhammer 40k</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="rollspel.html"
+                        >Rollspels Karaktärer</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="game.html"
+                        >Hugg Ner Busken</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- ###############################################################(/dropp meny)# -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#Kontakter">Kontakter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Policy">policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Information">Information</a>
+                </li>
+              </ul>
+              <!--######################################################################(/lista)#-->
+
+              <!--### sök fält #######################################################(sök fält)#-->
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+              <!--####################################################################(/sök fält)#-->
+            </div>
+            <!--##########################################################################(/meny)#-->
+          </div>
+        </nav>
+        <!--###############################################################################(/nav)#-->
+      </header>
+      <!--##############################################################################(/header)# -->
+
+      <!--### hero img ####################################################################(hero)# 
+      ingen padding på sidorna men margin bot  -->
+      <div class="container px-0">
+        <div
+          class="bg-image d-flex mb-5 justify-content-center align-items-center"
+          style="
+            background-image: url('../images/spaceegeners/2SE-hero-img-planet.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 25rem;
+          "
+        >
+          <h1 class="text-warning bg-black m-2">space engineers</h1>
+        </div>
+      </div>
+      <!--################################################################################(/hero)# -->
+      <!-- alert ! Error ! -->
+      <div
+        class="alert alert-warning alert-dismissible fade show m-5"
+        role="alert"
+      >
+        <strong>Holy guacamole!</strong>
+        <p class="text-danger">
+          Webb platsen värkar inte fungera som den ska! Återkom om ett år!
+        </p>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      <!--### Main ########################################################################(main)# -->
+      <main class="container mb-5 px-4">
+        <!--### reklam ########################################################################(reklam)# -->
+        <div class="container mb-5">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6 mb-4">
+              <div
+                style="
+                  background-image: url('../images/spaceegeners/2space-engineers-back.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  height: 25rem;
+                "
+                class="card bg-black p-4 border border-primary-subtle"
+                aria-hidden="true"
+              >
+                <h3 class="card-title placeholder-glow text-warning">
+                  <span class="placeholder col-6"></span>
+                </h3>
+                <img
+                  src="../images/spaceegeners/SE_logga.png"
+                  alt=""
+                  class="col-3"
+                />
+                <p class="card-text placeholder-glow bg-warning p-3">
+                  <span class="placeholder col-7"></span>
+                  <span class="placeholder col-4"></span>
+                  <span class="placeholder col-4"></span>
+                  <span class="placeholder col-6"></span>
+
+                  <span class="placeholder col-4"></span>
+                  <span class="placeholder col-6"></span>
+                </p>
+                <a
+                  class="btn btn-primary disabled placeholder col-6"
+                  aria-disabled="true"
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-6">
+              <div
+                style="
+                  background-image: url('../images/spaceegeners/2space-engineers-back.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  height: 25rem;
+                "
+                class="card bg-black p-4 border border-primary-subtle"
+                aria-hidden="true"
+              >
+                <h3 class="card-title placeholder-glow text-warning">
+                  <span class="placeholder col-6"></span>
+                </h3>
+                <img
+                  src="../images/spaceegeners/SE_logga.png"
+                  alt=""
+                  class="col-3"
+                />
+                <p class="card-text placeholder-glow bg-warning p-3">
+                  <span class="placeholder col-7"></span>
+                  <span class="placeholder col-4"></span>
+
+                  <span class="placeholder col-8"></span>
+                  <span class="placeholder col-4"></span>
+                </p>
+                <a
+                  class="btn btn-primary disabled placeholder col-6"
+                  aria-disabled="true"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--###########################################################################(/Reklam)# -->
+        <!--### kort ########################################################################(kort)#
+          jag har valt att korten ska planera hur upp lägget ska va för varge brytpungt i förelden
+         och genom padding så skaps mellan hos korten. -->
+        <div class="container text-center p-0">
+          <div class="row">
+            <!-- card -->
+            <div
+              class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-0 bg rounded-circle scale-hoverw"
+            >
+              <div class="p-3">
+                <div class="card bg-primary-subtle" aria-hidden="true">
+                  <img
+                    src="../images/spaceegeners/SE-creations-EMIL.jpg"
+                    class="card-img-top rounded-circle p-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <span class="placeholder col-7"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a
+                      class="btn btn-primary disabled placeholder col-6"
+                      aria-disabled="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-0 bg scale-hover"
+            >
+              <div class="p-3">
+                <div class="card bg-primary-subtle" aria-hidden="true">
+                  <img
+                    src="../images/spaceegeners/SE-creations-falkon.jpg"
+                    class="card-img-top rounded-circle p-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <span class="placeholder col-7"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a
+                      class="btn btn-primary disabled placeholder col-6"
+                      aria-disabled="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-0 bg scale-hover"
+            >
+              <div class="p-3">
+                <div class="card bg-primary-subtle" aria-hidden="true">
+                  <img
+                    src="../images/spaceegeners/SE-creations-HIRO.jpg"
+                    class="card-img-top rounded-circle p-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <span class="placeholder col-7"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a
+                      class="btn btn-primary disabled placeholder col-6"
+                      aria-disabled="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-0 bg scale-hover"
+            >
+              <div class="p-3">
+                <div class="card bg-primary-subtle" aria-hidden="true">
+                  <img
+                    src="../images/spaceegeners/SE-creations-MATO.jpg"
+                    class="card-img-top rounded-circle p-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <span class="placeholder col-7"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a
+                      class="btn btn-primary disabled placeholder col-6"
+                      aria-disabled="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-0 bg scale-hover"
+            >
+              <div class="p-3">
+                <div class="card bg-primary-subtle" aria-hidden="true">
+                  <img
+                    src="../images/spaceegeners/SE-creations-NORA.jpg"
+                    class="card-img-top rounded-circle p-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <span class="placeholder col-7"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a
+                      class="btn btn-primary disabled placeholder col-6"
+                      aria-disabled="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-0 bg scale-hover"
+            >
+              <div class="p-3">
+                <div class="card bg-primary-subtle" aria-hidden="true">
+                  <img
+                    src="../images/spaceegeners/SE-creations-PHM.jpg"
+                    class="card-img-top rounded-circle p-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <span class="placeholder col-7"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a
+                      class="btn btn-primary disabled placeholder col-6"
+                      aria-disabled="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-0 bg scale-hover"
+            >
+              <div class="p-3">
+                <div class="card bg-primary-subtle" aria-hidden="true">
+                  <img
+                    src="../images/spaceegeners/SE-creations-RAM.jpg"
+                    class="card-img-top rounded-circle p-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <span class="placeholder col-7"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a
+                      class="btn btn-primary disabled placeholder col-6"
+                      aria-disabled="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-0 bg scale-hover"
+            >
+              <div class="p-3">
+                <div class="card bg-primary-subtle" aria-hidden="true">
+                  <img
+                    src="../images/spaceegeners/SE-kim.jpg"
+                    class="card-img-top rounded-circle p-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <span class="placeholder col-7"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-4"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a
+                      class="btn btn-primary disabled placeholder col-6"
+                      aria-disabled="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card -->
+          </div>
+        </div>
+        <!--################################################################################(/kort)#-->
+        <!--### information ########################################################(information)#
+              har ett id för nav-->
+        <div
+          class="col-12 col-lg py-5 px-4 text-warning bg-dark border border-primary-subtle mb-5 mb-lg-0 mt-5"
+          id="Information"
+          aria-hidden="true"
+        >
+          <h2 class="placeholder-glow">
+            <span class="placeholder col-5"></span>
+          </h2>
+          <p class="m-0 placeholder-glow">
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-8"></span>
+            <span class="placeholder col-2"></span>
+
+            <span class="placeholder col-8"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-8"></span>
+            <span class="placeholder col-9"></span>
+          </p>
+        </div>
+        <!--#######################################################################(/information)#-->
+        <!--### Prenumerera ########################################################(Prenumerera)#-->
+        <div
+          class="container py-5 px-4 mt-5 text-black bg-warning border-primary-subtle"
+          aria-hidden="true"
+        >
+          <h2 class="placeholder-glow">
+            <span class="placeholder col-4"></span>
+          </h2>
+          <p class="placeholder-glow">
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-8"></span>
+          </p>
+          <form action="#">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="input-group mb-3">
+                  <span id="basic-addon2"></span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Skriv din e-post här"
+                    aria-label="Skriv din e-post här"
+                    aria-describedby="basic-addon2"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 pb-3">
+                <a
+                  class="btn btn-primary disabled placeholder col-4"
+                  aria-disabled="true"
+                ></a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--#######################################################################(/Prenumerera)#-->
+      </main>
+      <!--################################################################################(/main)#-->
+
+      <!--### footer ####################################################################(footer)#-->
+      <footer
+        class="container bg-dark py-5 px-4 text-warning bg-dark border border-primary-subtle px-0"
+      >
+        <div class="row justify-content-center gap-3">
+          <!--### Policy ################################################################(Policy)#
+          id för nav-->
+          <div class="col">
+            <div style="min-width: 12rem" id="Policy">
+              <h2>Policy</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Recusandae vitae ullam maxime numquam maiores dicta cumque
+                dolore iusto, obcaecati nobis facilis aliquid harum, suscipit
+                dolor similique quia, hic eum mollitia? Lorem ipsum dolor sit
+                amet consectetur
+              </p>
+              <p>I rymden kan ingen höra dig skrika!</p>
+            </div>
+          </div>
+          <!--##########################################################################(/Policy)#-->
+          <!--### Navigation ########################################################(Navigation)#-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <h2>Navigation</h2>
+              <nav class="navbar">
+                <ul class="">
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="../index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="game.html">Spel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="warhammer.html"
+                      >Warhammer 40k</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="space-engineers.html"
+                      >Space Engineers</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="rollspel.html"
+                      >Rollspel</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Kontakter"
+                      >Kontakter</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Policy">Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Information"
+                      >Information</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!--######################################################################(/Navigation)#-->
+          <!--### Kontakter ##########################################################(Kontakter)#
+          id för nav-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <section class="footer-kontakter" id="Kontakter">
+                <h2>Kontakter</h2>
+                <ul class="footer-kontakter__list">
+                  <li class="item">Mikael Hoffsteny</li>
+                  <li class="item">köpmansgatan 5</li>
+                  <li class="item">59838 Vimmerby</li>
+                  <li class="item">0492-40344</li>
+                  <li class="item">bighoffa@live.se</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <!--#######################################################################(/Kontakter)#-->
+          <!--### Socialamedier ##################################################(Socialamedier)#-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <h2>Socialamedier</h2>
+
+              <nav>
+                <a
+                  href="https://www.youtube.com/channel/UCfwp17ouENYR7czk4fYHs6A"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class=""
+                    src="../images/youtube-icon-tb.png"
+                    loading="lazy"
+                    alt="youtube ikonen är en kvadratisk röd kub med en vit trijangel i mitten"
+                /></a>
+
+                <a
+                  href="https://www.facebook.com/mikael.hoffsten"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class="footer-social__link-imges"
+                    src="../images/facebook-icon-tb.png"
+                    loading="lazy"
+                    alt="facebook ikon som är en blå rund cirkel runt en ett blåt F i mitten"
+                /></a>
+
+                <a
+                  href="https://www.instagram.com/bighoffa89/"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class=""
+                    src="../images/insta-icon-tb.png"
+                    loading="lazy"
+                    alt="instagram ikonen är en kvadratisk kamra som är rängbågs färgad "
+                /></a>
+              </nav>
+            </div>
+          </div>
+          <!--###################################################################(/Socialamedier)#-->
+        </div>
+      </footer>
+      <!--##############################################################################(/footer)# -->
+    </div>
+    <!--###############################################################################(/wrapper)# -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

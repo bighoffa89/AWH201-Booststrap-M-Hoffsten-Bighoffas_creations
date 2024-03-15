@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--### head ###########################################################################(heed)#-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../game/game.css" />
+    <title>Bighoffas Creations</title>
+  </head>
+  <!--####################################################################################(/head)#-->
+  <!-- backgrunds bild -->
+  <body
+    class="bg-image"
+    style="
+      background-image: url('../images/1back-g-universe.jpg ');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <!--### wrapper #####################################################################(wrapper)#
+     wrappern har en svart bakgrunds färg bild (bg-black) och har ingen padding på sidorna och
+     centrerar sitt inne håll -->
+    <div class="container wrapper-1 px-0 bg-black">
+      <!--### Header #####################################################################(header)#
+      centrerar sitt inne håll och ingen padding på sidorna-->
+      <header class="container px-0">
+        <!--### nav #########################################################################(nav)#
+        vissar sin fulla brädd i (lg) och  responsivt navigationsfält -->
+        <nav class="navbar navbar-expand-lg bg-primary-subtle">
+          <!--behållare med en flytande bredd-->
+          <div class="container-fluid">
+            <!--###### Logga ##############################################################(logga)#
+                sidans logga som är en länk till Home-->
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../images/site-logga-Head.jpg"
+                alt="Logo"
+                width="50"
+                height="50"
+                class="d-inline-block align-text-top rounded-circle"
+              />
+            </a>
+            <h3>Busken</h3>
+            <!--#########################################################################(/logga)#-->
+
+            <!--### hamburgar meny knapp ############################################(hamburgare)#
+            funtioner som aktiveras på små skärmar och blir en knapp som tar ner menyns 
+             id (navbarSupportedContent) -->
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--####################################################################(/hamburgare)#-->
+
+            <!--### meny ##################################################################(meny)#-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!--### lista ##############################################################(lista)#
+              automatisk marginal till höger (me-auto) och (ms-lg-auto) automatisk marginal 
+              till höger som gör att listan blir i mitten. medans (align-items-end) gör att 
+              itemsen kommer på höger sida i hamburgar menyn -->
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-auto align-items-end"
+              >
+                <li class="nav-item">
+                  <!-- (active) vissar att det är det aktiva sidan -->
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <!--### dropp meny ##################################################(dropp meny)# -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Hobbys</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="space-engineers.html"
+                        >SpaceEngeners</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="warhammer.html"
+                        >Warhammer 40k</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="rollspel.html"
+                        >Rollspels Karaktärer</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item active" href="game.html"
+                        >Hugg Ner Busken</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- ###############################################################(/dropp meny)# -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#Kontakter">Kontakter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Policy">policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Information">Information</a>
+                </li>
+              </ul>
+              <!--######################################################################(/lista)#-->
+
+              <!--### sök fält #######################################################(sök fält)#-->
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+              <!--####################################################################(/sök fält)#-->
+            </div>
+            <!--##########################################################################(/meny)#-->
+          </div>
+        </nav>
+        <!--###############################################################################(/nav)#-->
+      </header>
+      <!--##############################################################################(/header)# -->
+
+      <!--### hero img ####################################################################(hero)# 
+        -->
+
+      <div class="container px-0">
+        <div
+          class="bg-image d-flex justify-content-center align-items-center mb-5"
+          style="
+            background-image: url('../images/spel/buske.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 25rem;
+          "
+        ></div>
+      </div>
+      <!--################################################################################(/hero)# -->
+
+      <div class="wrapper">
+        <header class="container bg-dark mb-4">
+          <div class="m-5 text-center">
+            <h1 class="pt-5 display-1 text-warning">Hugg Ner Busken!</h1>
+            <div class="row gap-5 pb-4">
+              <button
+                class="( knappInformation ) col rounded-4 scale-hover border border-primary"
+                id="Information"
+              >
+                Information
+              </button>
+              <button
+                class="( inställningsknapp ) col rounded-4 scale-hover border border-primary"
+              >
+                Inställningar
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 p-3">
+              <aside
+                class="( information ) text-center border rounded-4 px-3 pt-5 bg-warning"
+              >
+                <h2 class="pb-3">Information och Regler</h2>
+                <p>Tryck på start knappen för att starta.</p>
+                <p>Klicka på buskarna som dycker upp för att ta bort dem.</p>
+                <p>För varje buske du hugger ner får du ett poäng.</p>
+                <p class="mb-5">Hur många poäng får du innan tiden går ut?</p>
+              </aside>
+            </div>
+            <div class="col-12 col-md-6 p-3">
+              <aside
+                class="( instellningar ) text-center border rounded-4 px-3 py-5 bg-warning gap-3"
+              >
+                <h2 class="pb-2">Level</h2>
+                <button
+                  class="( latt ) col-8 col-sm-3 rounded-4 scale-hover mb-2"
+                >
+                  Lätt
+                </button>
+                <button
+                  class="( normal ) col-8 col-sm-3 rounded-4 scale-hover mb-2"
+                >
+                  Normal
+                </button>
+                <button class="( svor ) col-8 col-sm-3 rounded-4 scale-hover">
+                  Svår
+                </button>
+                <h2 class="pb-2 pt-5 m-0">längd</h2>
+                <button
+                  class="( sek10 ) col-8 col-sm-3 rounded-4 scale-hover mb-2"
+                >
+                  10 sek
+                </button>
+                <button
+                  class="( sek30 ) col-8 col-sm-3 rounded-4 scale-hover mb-2"
+                >
+                  30 sek
+                </button>
+                <button class="( sek60 ) col-8 col-sm-3 rounded-4 scale-hover">
+                  1 min
+                </button>
+              </aside>
+            </div>
+          </div>
+        </div>
+        <main class="container p-3">
+          <section class="row g-auto">
+            <div
+              class="( poängTavla ) col-3 text-center border border-2 border-primary rounded-4 p-3 mx-auto bg-primary-subtle"
+            >
+              <h3>P</h3>
+              <div class="( poäng ) display-4">0</div>
+            </div>
+            <div
+              class="( nerRäknare ) col-4 text-center text-danger border border-primary border-2 rounded-4 p-3 mx-auto d-flex justify-content-center align-items-center display-2 bg-primary-subtle"
+            ></div>
+            <div
+              class="( tidTavla ) col-3 text-center border border-2 rounded-4 border-primary p-3 mx-auto bg-primary-subtle"
+            >
+              <h3>Tid</h3>
+              <div class="( tidKvar ) display-4">0</div>
+            </div>
+          </section>
+
+          <div class="( startknappsplats ) pt-5">
+            <button
+              class="col-5 KnappSrata rounded-4 scale-hover border border-primary"
+            >
+              Starta
+            </button>
+          </div>
+          <div
+            class="( SpelPlan ) border border-3 border-danger d-flex flex-wrap bg-success rounded rounded-4 mx-1 mx-sm-auto mb-5 mt-3"
+            style="max-width: 700px"
+          >
+            <div class="( jord jord1 ) col-4 m-2">
+              <div class="( buske )"></div>
+            </div>
+            <div class="( jord jord2 ) col-4 m-2">
+              <div class="( buske )"></div>
+            </div>
+            <div class="( jord jord3 ) col-4 m-2">
+              <div class="( buske )"></div>
+            </div>
+            <div class="( jord jord4 ) col-4 m-2">
+              <div class="( buske )"></div>
+            </div>
+            <div class="( jord jord5 ) col-4 m-2">
+              <div class="( buske )"></div>
+            </div>
+            <div class="( jord jord6 ) col-4 m-2">
+              <div class="( buske )"></div>
+            </div>
+          </div>
+
+          <audio id="spelHuggBuske" src="../game/sonds/CoopWood.wav"></audio>
+          <audio
+            id="startAndStopp"
+            src="../game/sonds/startAndStopp.mp3"
+          ></audio>
+        </main>
+        <footer>
+          <p>Mikael Hoffsten</p>
+        </footer>
+      </div>
+      <script src="scripts.js"></script>
+      <!--################################################################################(/main)#-->
+
+      <!--### footer ####################################################################(footer)#-->
+      <footer
+        class="container bg-dark py-5 px-4 text-warning bg-dark border border-primary-subtle px-0"
+      >
+        <div class="row justify-content-center gap-3">
+          <!--### Policy ################################################################(Policy)#
+          id för nav-->
+          <div class="col">
+            <div style="min-width: 12rem" id="Policy">
+              <h2>Policy</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Recusandae vitae ullam maxime numquam maiores dicta cumque
+                dolore iusto, obcaecati nobis facilis aliquid harum, suscipit
+                dolor similique quia, hic eum mollitia? Lorem ipsum dolor sit
+                amet consectetur
+              </p>
+              <p>I rymden kan ingen höra dig skrika!</p>
+            </div>
+          </div>
+          <!--##########################################################################(/Policy)#-->
+          <!--### Navigation ########################################################(Navigation)#-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <h2>Navigation</h2>
+              <nav class="navbar">
+                <ul class="">
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="../index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="game.html">Spel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="warhammer.html"
+                      >Warhammer 40k</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="space-engineers.html"
+                      >Space Engineers</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="rollspel.html"
+                      >Rollspel</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Kontakter"
+                      >Kontakter</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Policy">Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Information"
+                      >Information</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!--######################################################################(/Navigation)#-->
+          <!--### Kontakter #############################################""###########(Kontakter)#
+          id för nav-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <section class="footer-kontakter" id="Kontakter">
+                <h2>Kontakter</h2>
+                <ul class="footer-kontakter__list">
+                  <li class="item">Mikael Hoffsteny</li>
+                  <li class="item">köpmansgatan 5</li>
+                  <li class="item">59838 Vimmerby</li>
+                  <li class="item">0492-40344</li>
+                  <li class="item">bighoffa@live.se</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <!--#######################################################################(/Kontakter)#-->
+          <!--### Socialamedier ##################################################(Socialamedier)#-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <h2>Socialamedier</h2>
+
+              <nav>
+                <a
+                  href="https://www.youtube.com/channel/UCfwp17ouENYR7czk4fYHs6A"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class=""
+                    src="../images/youtube-icon-tb.png"
+                    loading="lazy"
+                    alt="youtube ikonen är en kvadratisk röd kub med en vit trijangel i mitten"
+                /></a>
+
+                <a
+                  href="https://www.facebook.com/mikael.hoffsten"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class="footer-social__link-imges"
+                    src="../images/facebook-icon-tb.png"
+                    loading="lazy"
+                    alt="facebook ikon som är en blå rund cirkel runt en ett blåt F i mitten"
+                /></a>
+
+                <a
+                  href="https://www.instagram.com/bighoffa89/"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class=""
+                    src="../images/insta-icon-tb.png"
+                    loading="lazy"
+                    alt="instagram ikonen är en kvadratisk kamra som är rängbågs färgad "
+                /></a>
+              </nav>
+            </div>
+          </div>
+          <!--###################################################################(/Socialamedier)#-->
+        </div>
+      </footer>
+      <!--##############################################################################(/footer)# -->
+    </div>
+    <!--###############################################################################(/wrapper)# -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../game/game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--### head ###########################################################################(heed)#-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bighoffas Creations</title>
+  </head>
+  <!--####################################################################################(/head)#-->
+  <!-- backgrunds bild -->
+  <body
+    class="bg-image"
+    style="
+      background-image: url('images/1back-g-universe.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <!--### wrapper #####################################################################(wrapper)#
+     wrappern har en svart bakgrunds färg bild (bg-black) och har ingen padding på sidorna och
+     centrerar sitt inne håll -->
+
+    <div class="container wrapper px-0 bg-black">
+      <!--### Header #####################################################################(header)#
+      centrerar sitt inne håll och ingen padding på sidorna-->
+
+      <header class="container px-0">
+        <!--### nav #########################################################################(nav)#
+        vissar sin fulla brädd i (lg) och  responsivt navigationsfält -->
+        <nav class="navbar navbar-expand-lg bg-primary-subtle">
+          <!--behållare med en flytande bredd-->
+          <div class="container-fluid">
+            <!--###### Logga ##############################################################(logga)#
+                sidans logga som är en länk till Home-->
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="images/site-logga-Head.jpg"
+                alt="Logo"
+                width="50"
+                height="50"
+                class="d-inline-block align-text-top rounded-circle"
+            /></a>
+            <!--#########################################################################(/logga)#-->
+
+            <!--### hamburgar meny knapp ############################################(hamburgare)#
+            funtioner som aktiveras på små skärmar och blir en knapp som tar ner menyns 
+             id (navbarSupportedContent) -->
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--####################################################################(/hamburgare)#-->
+
+            <!--### meny ##################################################################(meny)#-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!--### lista ##############################################################(lista)#
+              automatisk marginal till höger (me-auto) och (ms-lg-auto) automatisk marginal 
+              till höger som gör att listan blir i mitten. medans (align-items-end) gör att 
+              itemsen kommer på höger sida i hamburgar menyn -->
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-auto align-items-end"
+              >
+                <li class="nav-item">
+                  <!-- (active) vissar att det är det aktiva sidan -->
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <!--### dropp meny ##################################################(dropp meny)# 
+                  dropp meny som heter hobbys som har 4 länkar i sig-->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Hobbys</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="webb-sites/space-engineers.html"
+                        >SpaceEngeners</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="webb-sites/warhammer.html"
+                        >Warhammer 40k</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="webb-sites/rollspel.html"
+                        >Rollspels Karaktärer</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="webb-sites/game.html"
+                        >Hugg Ner Busken</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- ###############################################################(/dropp meny)# -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#Kontakter">Kontakter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Policy">policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Information">Information</a>
+                </li>
+              </ul>
+              <!--######################################################################(/lista)#-->
+
+              <!--### sök fält #######################################################(sök fält)#
+              sök ruta (fungerar ej) -->
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+              <!--####################################################################(/sök fält)#-->
+            </div>
+            <!--##########################################################################(/meny)#-->
+          </div>
+        </nav>
+        <!--###############################################################################(/nav)#-->
+      </header>
+
+      <!--##############################################################################(/header)# -->
+
+      <!--### hero img ####################################################################(hero)# 
+
+      bakgrunds bild med ingen padding på sidorna men margin bot. en bild som ska centreras och
+      täcka hels sitt område med en centrerad text i mitten som har en margin och svart bakgrunds
+      färg. -->
+
+      <div class="container px-0">
+        <div
+          class="bg-image d-flex justify-content-center align-items-center mb-5"
+          style="
+            background-image: url('images/spaceegeners/2SE-hero-img-planet.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 25rem;
+          "
+        >
+          <h1 class="text-warning bg-black m-2">bighoffas Creations</h1>
+        </div>
+      </div>
+
+      <!--################################################################################(/hero)# -->
+
+      <!--### Main ########################################################################(main)#
+      inne håller presentation, kort-länkar-hobbys, information och Prenumerera. 
+      dess barn items är centrerade-->
+      <main class="container d-flex flex-column align-items-center px-4">
+        <!--### presentation ######################################################(presentation)#
+        har pading och margin-bot bilden har float vid sm i höger sida.   -->
+        <div
+          class="container py-5 px-4 mb-4 text-warning bg-dark border border-primary-subtle"
+        >
+          <img
+            src="images/jag8%20(1).jpg"
+            class="rounded mb-4 d-block mx-auto float-sm-end m-1 border border-primary-subtle"
+            height="150"
+            alt="En presenerande bild av en man"
+          />
+
+          <h2 class="">Mikael Hoffsten</h2>
+
+          <p class="m-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            quaerat animi facere quasi? Explicabo earum odio, eveniet voluptates
+            quibusdam quam asperiores veniam at deleniti aut unde nulla error
+            minima impedit iusto amet? Necessitatibus explicabo error nulla
+            omnis beatae voluptates repellendus, tempora, iste quidem vero
+            tenetur. Eos ad dignissimos, quae cumque, quam asperiores veniam at
+            deleniti aut unde expedita, placeat repellendus deleniti tempore
+            delectus provident corporis accusamus ullam.
+          </p>
+        </div>
+        <!--######################################################################(/presentation)#-->
+
+        <!--### huvud innehåll ###########################################################(cards)#
+        inne hållet delas in i rader med mellan rum, text ska va centrerad. korten ska va lika 
+        breda som sin förälder vid liten skärm sen ska dom bestämma själva storlek i rad.   -->
+        <div class="container text-center mb-4">
+          <div class="row gap-3">
+            <!--kort tekningar-->
+            <div class="col-12 col-sm px-0">
+              <div
+                class="card mb-3 pt-1 pb-3 px-2 bg-primary-subtle border border-dark d-flex flex-column h-100 scale-hover"
+              >
+                <img
+                  src="images/rollspels-bilder/hydra.jpg"
+                  height="200"
+                  class="card-img-top rounded-circle p-3"
+                  loading="lazy"
+                  alt="en hydra med 5 huven"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Ritade tekningar</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Consequuntur ipsa reiciendis quis provident rerum
+                    perspiciatis?
+                  </p>
+                  <a
+                    href="webb-sites/rollspel.html"
+                    class="btn btn-primary mt-auto"
+                    >Kolla här</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!--kort Busken-->
+            <div class="col-12 col-sm px-0">
+              <div
+                class="card mb-3 pt-1 pb-3 px-2 bg-primary-subtle border border-dark d-flex flex-column h-100 scale-hover"
+              >
+                <img
+                  src="images/spel/buske.png"
+                  height="200"
+                  class="card-img-top rounded-circle p-3"
+                  loading="lazy"
+                  alt="en målda buske"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Hugg Busken</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero iste, similique nam dolorem unde adipisci.
+                  </p>
+                  <a href="webb-sites/game.html" class="btn btn-primary mt-auto"
+                    >Bara ett hugg</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!--kort Warhammer-->
+            <div class="col-12 col-sm px-0">
+              <div
+                class="card mb-3 pt-1 pb-3 px-2 bg-primary-subtle border border-dark d-flex flex-column h-100 scale-hover"
+              >
+                <img
+                  src="images/warhammer/ledare.jpg"
+                  height="200"
+                  class="card-img-top rounded-circle p-3"
+                  loading="lazy"
+                  alt="en ödle liknade man som håller i ett gevär över huvet"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Warhammer</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Animi quo esse repellat itaque similique corporis!
+                  </p>
+                  <a
+                    href="webb-sites/warhammer.html"
+                    class="btn btn-primary mt-auto"
+                    >Kriget kallar</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!--kort SpaceEngeners-->
+            <div class="col-12 col-sm px-0">
+              <div
+                class="card mb-3 pt-1 pb-3 px-2 bg-primary-subtle border border-dark d-flex flex-column h-100 scale-hover"
+              >
+                <img
+                  src="images/spaceegeners/SE-creations-HIRO.jpg"
+                  height="200"
+                  class="card-img-top rounded-circle p-3"
+                  loading="lazy"
+                  alt="ett gult rymd skepp"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">SpaceEngeners</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam tenetur autem voluptatum magni deleniti
+                    doloribus?
+                  </p>
+                  <a
+                    href="webb-sites/space-engineers.html"
+                    class="btn btn-primary mt-auto"
+                    >flyg iväg
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--nyt kort här-->
+          </div>
+        </div>
+        <!--#############################################################################(/cards)#-->
+
+        <!--### information ########################################################(information)#
+        har ett id för nav-->
+        <div
+          class="container mt-2 mb-4 py-5 px-4 text-warning bg-dark border border-primary-subtle"
+          id="Information"
+        >
+          <h2>Information</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            quaerat animi facere quasi? Explicabo earum odio, eveniet voluptates
+            quibusdam quam asperiores veniam at deleniti aut unde nulla error
+            minima impedit iusto amet? Necessitatibus explicabo error nulla
+            omnis beatae voluptates repellendus, tempora, iste quidem vero
+            tenetur. Eos ad dignissimos, quae cumque, expedita, placeat
+            repellendus deleniti tempore delectus provident corporis accusamus
+            ullam.
+          </p>
+        </div>
+        <!--#######################################################################(/information)#-->
+
+        <!--### Prenumerera ########################################################(Prenumerera)#
+        (funkar ej bara för syns skull!) -->
+        <div
+          class="container py-5 px-4 mt-3 mb-5 text-black bg-warning border-primary-subtle"
+        >
+          <h2>Prenumerera</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            quaerat animi facere quasi? Explicabo earum odio, eveniet voluptates
+            quibusdam quam asperiores veniam at deleniti aut unde nulla error
+            minima impedit iusto amet?
+          </p>
+          <form action="#">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="input-group mb-3">
+                  <span id="basic-addon2"></span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Skriv din e-post här"
+                    aria-label="Skriv din e-post här"
+                    aria-describedby="basic-addon2"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 pb-3">
+                <button class="btn btn-primary" type="submit">
+                  Prenumerera
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--#######################################################################(/Prenumerera)#-->
+      </main>
+      <!--################################################################################(/main)#-->
+
+      <!--### footer ####################################################################(footer)#
+      inne håller samma footer i alla sidor som har policy, nav, kontakter och Socialamedier
+      -->
+      <footer
+        class="container bg-dark py-5 px-4 text-warning bg-dark border border-primary-subtle px-0"
+      >
+        <div class="row justify-content-center gap-3">
+          <!--### Policy ################################################################(Policy)#
+          id för nav-->
+          <div class="col">
+            <div style="min-width: 12rem" id="Policy">
+              <h2>Policy</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Recusandae vitae ullam maxime numquam maiores dicta cumque
+                dolore iusto, obcaecati nobis facilis aliquid harum, suscipit
+                dolor similique quia, hic eum mollitia? Lorem ipsum dolor sit
+                amet consectetur
+              </p>
+              <p>I rymden kan ingen höra dig skrika!</p>
+            </div>
+          </div>
+          <!--##########################################################################(/Policy)#-->
+          <!--### Navigation ########################################################(Navigation)#-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <h2>Navigation</h2>
+              <nav class="navbar">
+                <ul class="">
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="webb-sites/game.html"
+                      >Spel</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-danger"
+                      href="webb-sites/warhammer.html"
+                      >Warhammer 40k</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-danger"
+                      href="webb-sites/space-engineers.html"
+                      >Space Engineers</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-danger"
+                      href="webb-sites/rollspel.html"
+                      >Rollspel</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Kontakter"
+                      >Kontakter</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Policy">Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Information"
+                      >Information</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!--######################################################################(/Navigation)#-->
+          <!--### Kontakter #############################################""###########(Kontakter)#
+          id för nav-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <section class="footer-kontakter" id="Kontakter">
+                <h2>Kontakter</h2>
+                <ul class="footer-kontakter__list">
+                  <li class="item">Mikael Hoffsteny</li>
+                  <li class="item">köpmansgatan 5</li>
+                  <li class="item">59838 Vimmerby</li>
+                  <li class="item">0492-40344</li>
+                  <li class="item">bighoffa@live.se</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <!--#######################################################################(/Kontakter)#-->
+          <!--### Socialamedier ##################################################(Socialamedier)#-->
+          <div class="col">
+            <div style="min-width: 12rem">
+              <h2>Socialamedier</h2>
+
+              <nav>
+                <a
+                  href="https://www.youtube.com/channel/UCfwp17ouENYR7czk4fYHs6A"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class=""
+                    src="images/youtube-icon-tb.png"
+                    loading="lazy"
+                    alt="youtube ikonen är en kvadratisk röd kub med en vit trijangel i mitten"
+                /></a>
+
+                <a
+                  href="https://www.facebook.com/mikael.hoffsten"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class="footer-social__link-imges"
+                    src="images/facebook-icon-tb.png"
+                    loading="lazy"
+                    alt="facebook ikon som är en blå rund cirkel runt en ett blåt F i mitten"
+                /></a>
+
+                <a
+                  href="https://www.instagram.com/bighoffa89/"
+                  class="p-3"
+                  target="_blank"
+                  ><img
+                    class=""
+                    src="images/insta-icon-tb.png"
+                    loading="lazy"
+                    alt="instagram ikonen är en kvadratisk kamra som är rängbågs färgad "
+                /></a>
+              </nav>
+            </div>
+          </div>
+          <!--###################################################################(/Socialamedier)#-->
+        </div>
+      </footer>
+      <!--##############################################################################(/footer)# -->
+    </div>
+    <!--###############################################################################(/wrapper)# -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
